@@ -1,10 +1,10 @@
-// Project: Frontend Builder (Wordpress version)
-// Project URI: https://github.com/Xgraf/frontend-builder-wordpress
+// Project: Gulp Starter (Wordpress version)
+// Project URI: https://github.com/GrafSoul/gulp-starter-wordpress
 // Version: 1.0
 // Tags: gulp, html, css, js, sass
-// Description: Frontend Builder (Wordpress version) - Project builder for web development.
+// Description: Gulp Starter (Wordpress version) - Project builder for web development.
 // Author: Dmitriy Zatulovskiy
-// Author URI: https://github.com/Xgraf , http://networkroom.ru
+// Author URI: https://github.com/GrafSoul , http://networkroom.ru
 
 // ==========================================================================
 // Configuration Rules
@@ -28,20 +28,25 @@ $color_accent: '';
 
 $white: #fff;
 $black: #000;
-$grey:  #333333;
+$grey: #333333;
 
 // Fonts
 // ==========================================================================
 
 $font: Roboto;
-$font-add: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-all: $font, $font-add ;
+$font-add: Gotham,
+"Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif;
+$font-all: $font,
+$font-add;
 $font-url:'../../fonts/roboto/';
 
 // Sprite images
 // ==========================================================================
 
-$sprite: url('.images/') ;
+$sprite: url('.images/');
 
 // Grid
 // ==========================================================================

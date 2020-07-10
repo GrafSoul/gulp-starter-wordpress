@@ -1,11 +1,11 @@
 /*
-Project: Frontend Builder (Wordpress version)
-Project URI: https://github.com/Xgraf/frontend-builder-wordpress
+Project: Gulp Starter (Wordpress version)
+Project URI: https://github.com/GrafSoul/gulp-starter-wordpress
 Version: 1.0
 Tags: gulp, html, css, js, sass
-Description: Frontend Builder (Wordpress version) - Project builder for web development.
+Description: Gulp Starter (Wordpress version) - Project builder for web development.
 Author: Dmitriy Zatulovskiy
-Author URI: https://github.com/Xgraf , http://networkroom.ru
+Author URI: https://github.com/GrafSoul , http://networkroom.ru
 */
 
 //
@@ -40,27 +40,32 @@ Author URI: https://github.com/Xgraf , http://networkroom.ru
 // THEME
 // ==========================================================================
 @import "./theme/theme.scss"; // Theme rules
+
 //
 // STATE
 // ==========================================================================
 /* Screen more than max-width: 769px
    ========================================================================== */
 @media only screen and (min-width: 769px) {
-@import "./state/769.scss";
+   @import "./state/769.scss";
 }
+
 /* Screen min-width: 481px and max-width: 768px
    ========================================================================== */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-@import "./state/768.scss";
+   @import "./state/768.scss";
 }
+
 /* Screen min-width: 241px and max-width: 480px
    ========================================================================== */
 @media only screen and (min-width: 241px) and (max-width: 480px) {
-@import "./state/480.scss";
+   @import "./state/480.scss";
 }
+
 /* Screen max-width: 240px
    ========================================================================== */
 @media only screen and (max-width: 240px) {
-@import "./state/240.scss";
+   @import "./state/240.scss";
 }
+
 // ==========================================================================

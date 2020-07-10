@@ -1,31 +1,35 @@
-// Project: Frontend Builder (Wordpress version)
-// Project URI: https://github.com/Xgraf/frontend-builder-wordpress
+// Project: Gulp Starter (Wordpress version)
+// Project URI: https://github.com/GrafSoul/gulp-starter-wordpress
 // Version: 1.0
 // Tags: gulp, html, css, js, sass
-// Description: Frontend Builder (Wordpress version) - Project builder for web development.
+// Description: Gulp Starter (Wordpress version) - Project builder for web development.
 // Author: Dmitriy Zatulovskiy
-// Author URI: https://github.com/Xgraf , http://networkroom.ru
+// Author URI: https://github.com/GrafSoul , http://networkroom.ru
 
 // =========================================================================
 // Images - PNG Sprite
 // =========================================================================
 
 module.exports = function (gulp, plugins, config) {
-	return function () {
-		const spriteData = gulp.src(config.input.pngSprite)
-			.pipe(plugins.spritesmith({
-				imgPath: '/images/template/spritepng.png',
-				imgName: 'spritepng.png',
-				cssName: '_spritepng.scss',
-				padding: 5,
-				cssFormat: 'scss',
-				algorithm: 'binary-tree',
-				cssVarMap: function (sprite) {
-					sprite.name = 'img-' + sprite.name;
-				}
-			}));
+    return function pngSprite(done) {
+        const spriteData = gulp.src(config.input.pngSprite).pipe(
+            plugins.spritesmith({
+                imgPath: '/images/template/spritepng.png',
+                imgName: 'spritepng.png',
+                cssName: '_spritepng.scss',
+                padding: 5,
+                cssFormat: 'scss',
+                algorithm: 'binary-tree',
+                cssVarMap: function (sprite) {
+                    sprite.name = 'img-' + sprite.name;
+                },
+            }),
+        );
 
-		spriteData.img.pipe(gulp.dest(config.output.path + '/images/template/'));
-		spriteData.css.pipe(gulp.dest(config.input.sassPngSprite));
-	};
+        spriteData.img.pipe(
+            gulp.dest(config.output.path + '/images/template/'),
+        );
+        spriteData.css.pipe(gulp.dest(config.input.sassPngSprite));
+        done();
+    };
 };
