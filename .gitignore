@@ -1,0 +1,25 @@
+# editors
+.idea
+.vscode
+
+# dependencies
+/source/node_modules
+
+# production
+/public
+
+# misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# files
+/css
+/fonts
+/images
+/js
+*.php
+style.css
+screenshot.png
+
+

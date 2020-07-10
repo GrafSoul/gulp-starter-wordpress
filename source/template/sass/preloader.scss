@@ -1,0 +1,28 @@
+/*
+Title: Preloader
+Description: Preloader Site
+*/
+
+/* ==========================================================================
+   Preloader Rules
+   ========================================================================== */
+
+#preloader {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 100500;
+	background-color: #e4e4e4
+}
+
+#preloader .spinner {
+	width: 64px;
+	height: 64px;
+	margin: -32px -32px 0 0;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	background: url(/images/preloader/spinner_cb.png) 50% 50% no-repeat
+}

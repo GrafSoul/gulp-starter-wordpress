@@ -1,0 +1,66 @@
+/*
+Project: Frontend Builder (Wordpress version)
+Project URI: https://github.com/Xgraf/frontend-builder-wordpress
+Version: 1.0
+Tags: gulp, html, css, js, sass
+Description: Frontend Builder (Wordpress version) - Project builder for web development.
+Author: Dmitriy Zatulovskiy
+Author URI: https://github.com/Xgraf , http://networkroom.ru
+*/
+
+//
+// ==========================================================================
+// STYLE SASS
+// ==========================================================================
+//
+// BASE
+// ==========================================================================
+@import "./base/config.scss"; // Config rules
+@import "./base/mixins.scss"; // Mixins rules
+@import "./base/reset.scss"; // Reset rules
+@import "./base/fonts.scss"; // Fonts rules
+@import "./base/base.scss"; // Base rules
+//
+// lAYOUT
+// ==========================================================================
+@import "./layout/grid.scss"; // Grid rules
+@import "./layout/header.scss"; // Header rules
+@import "./layout/content.scss"; // Content rules
+@import "./layout/sidebar.scss"; // Sidebar rules
+@import "./layout/footer.scss"; // Footer rules
+//
+// MODULE
+// ==========================================================================
+@import "./module/menu.scss"; // Menu rules
+@import "./module/search.scss"; // Search rules
+@import "./module/gallery.scss"; // Gallery rules
+@import "./module/slider.scss"; // Slider rules
+@import "./module/article.scss"; // Article rules
+//
+// THEME
+// ==========================================================================
+@import "./theme/theme.scss"; // Theme rules
+//
+// STATE
+// ==========================================================================
+/* Screen more than max-width: 769px
+   ========================================================================== */
+@media only screen and (min-width: 769px) {
+@import "./state/769.scss";
+}
+/* Screen min-width: 481px and max-width: 768px
+   ========================================================================== */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+@import "./state/768.scss";
+}
+/* Screen min-width: 241px and max-width: 480px
+   ========================================================================== */
+@media only screen and (min-width: 241px) and (max-width: 480px) {
+@import "./state/480.scss";
+}
+/* Screen max-width: 240px
+   ========================================================================== */
+@media only screen and (max-width: 240px) {
+@import "./state/240.scss";
+}
+// ==========================================================================

@@ -1,0 +1,49 @@
+{
+	"name": "frontend-builder-wordpress",
+	"version": "1.0.0",
+	"description": "Frontend Builder  (Wordpress version) - Project builder for web development.",
+	"main": "gulpfile.js",
+	"scripts": {
+		"test": "runtest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Xgraf/frontend-builder-wordpress.git"
+	},
+	"keywords": [
+		"project",
+		"front-end",
+		"web",
+		"php",
+		"wordpress",
+		"css",
+		"js",
+		"sass",
+		"gulp"
+	],
+	"author": "Dmitriy Zatulovskiy",
+	"license": "MIT",
+	"homepage": "https://github.com/Xgraf",
+	"devDependencies": {
+		"browser-sync": "^2.26.3",
+		"gulp": "^3.9.1",
+		"gulp-autoprefixer": "^6.0.0",
+		"gulp-clean-css": "^3.10.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-filesize": "^0.0.6",
+		"gulp-if": "^2.0.2",
+		"gulp-imagemin": "^4.1.0",
+		"gulp-jshint": "^2.1.0",
+		"gulp-load-plugins": "^1.5.0",
+		"gulp-notify": "^3.2.0",
+		"gulp-plumber": "^1.2.0",
+		"gulp-rename": "^1.4.0",
+		"gulp-sass": "^4.0.2",
+		"gulp-sourcemaps": "^2.6.4",
+		"gulp-svg-sprite": "^1.5.0",
+		"gulp-uglify": "^3.0.1",
+		"gulp-zip": "^4.2.0",
+		"gulp.spritesmith": "^6.9.0",
+		"imagemin-pngquant": "^6.0.0"
+	}
+}
